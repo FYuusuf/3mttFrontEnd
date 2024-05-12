@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Nerds</title>
+
+    <script src="api.js" ></script>
+<link rel="stylesheet" href="api.css">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Feedback</a></li>
+                    <li><a href="">Contact</a></li>   
+                </ul>
+            </div>
+            <i class="fa fa-times" onclick="showMenu()"></i>
+        </nav>
+     
+
+    <h1>Somnambulism</h1>
+    <p>Somnambulism is sleepwalking. It refers to when a person engages in actions, 
+        movements and speech while clinically</p>
+        <h2 class="rye">Somnambulists</h2> A somnambulist cannot be held to account for actions carried 
+        out while sleepwalking. This is because they are typically unaware of what they've done, 
+        what they've eaten or where they've gone while sleepwalking.
+        <h2 class="dye">Types of Somnambulists</h2>
+        <ul>
+            <li>Children</li>
+            <li>Young Adults</li>
+            <li>Adults</li>  
+        </ul>
+
+        <h3 class="me">Treatments for Somnambulists</h3>
+        <ol>
+            <li>
+                Therapy: a few research have shown the merits of therapy. Albeit anecdotal, it is worthy to note that 
+                therapy and hypnosis have been shown to have effects in weaning some sufferers off certain maladies.
+            </li>
+            <li>
+                Palliative Treatment: this include close monitoring of the somnambulist when he or she sleeps to catch
+                the instances where an episode starts to see if there is a notable precursor to an episode.
+            </li>
+            <li>
+                Talk Therapy: this involves speaking with the somnabulists to make them realise and accept the realities
+                of the condition. Encourage them to be comfprtable with it and to freely share its realities woth a 
+                significant other.
+            </li>
+            <li>
+                Further Research: it is important for families with somnabulists to coalesce and assist one another to
+                support the somnabulists through their struggle. There are many resources online to get better knowledge
+                of the situation. These include: <a href="https://my.clevelandclinic.org">Text</a>
+            </li>
+            <li>
+                Support the somnabulists
+            </li>
+        </ol>
+
+        <div class="pagination">
+            <button class="btn1">prev</button>
+            <ul>
+                <li class="link" id = "active" value="1" onclick="activeLink()">1</li>
+                <li class="link" value="2" onclick="activeLink()">2</li>
+                <li class="link" value="3" onclick="activeLink()">3</li>
+                <li class="link" value="4" onclick="activeLink()">4</li>
+            
+            </ul>
+            <button class="btn2">next</button>
+        </div>
+
+        <script>
+             let link = document.getElementsByClassName("link"); 
+             
+             let currentValue = 1; 
+             
+             function activeLink(){ 
+                for (l of link){
+                l.classList,remove("active");
+    } 
+    event.target.classList.add("active");
+    currentValue = event.target.value;
+}
+        </script>
+</body>
+</html>
